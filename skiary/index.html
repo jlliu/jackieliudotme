@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<link rel="stylesheet" type="text/css" href="../work-page.css">
+
+<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700|Nunito:400,300,700' rel='stylesheet' type='text/css'>
+<!-- <script src="../jquery.js" type="text/javascript"></script> -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="../navbar.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<div class="navbar-wrap sticky opaque" data-0="display:none;" data-650="display:block;transform:scaleY(0);top:-27px;" data-700="opacity:1;transform:scaleY(1);top:-0px;">
+	<div id="navbar">
+		<span id="navbar-logo" data-690="opacity:0;" data-710="opacity:1;"><a href="../">jackie liu</a></span>
+		<ul class="hide-for-mobile" data-690="opacity:0;" data-710="opacity:1;">
+			<li><a href="#about">about</a></li>
+			<li><a href="#works">works</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+		<ul class="mobile-menu show-for-mobile" >
+			<li class="navbar-chevron-listitem"><a><div class="navbar-chevron">></div></a></li>
+			<div class="dropdown">
+			<li ><a href="../#about">about</a></li>
+			<li ><a href="../#works">works</a></li>
+			<li ><a href="../#contact">contact</a></li>
+			</div>
+		</ul>
+
+	</div>
+</div>
+<div id="skrollr-body">
+
+<div id="content">
+<div class="navbar-wrap top-navbar-wrap">
+	<div id="navbar">
+		<span id="navbar-logo"><a href="../">jackie liu</a></span>
+		<ul class="hide-for-mobile">
+			<li><a href="../#about">about</a></li>
+			<li><a href="../#works">works</a></li>
+			<li><a href="../#contact">contact</a></li>
+		</ul>
+		<ul class="mobile-menu show-for-mobile" >
+			<li class="navbar-chevron-listitem"><a><div class="navbar-chevron navbar-chevron-nonsticky">></div></a></li>
+			<div class="dropdown">
+			<li ><a href="../#about">about</a></li>
+			<li ><a href="../#works">works</a></li>
+			<li ><a href="../#contact">contact</a></li>
+			</div>
+		</ul>
+	</div>
+</div>
+<section>
+	<div class="heading-wrapper">
+		<div class="heading skiary">
+			<h2 >skiary</h2>
+			<h4 class="heading-subheading">web application - january 2016 </h4>
+			
+		</div>
+		<div class="top-border"></div>
+	</div>
+	
+<!-- 	
+	<div class="ui-grid">
+		<div class="eight wide column"> -->
+	<div class="row">
+		<img src="../img/full/skiary.gif" class="two-third inline left">
+		<div class="third inline right details">
+			<h4>done for</h4><p>6.148 web programming competition</p><h4>tools used</h4><p>Meteor, HTML, CSS</p><h4>awards</h4><p>Most Impressive UI + 3rd Place Rookie Division  </p></div>
+		
+		</div>
+	<div class="row"><p class="whole">skiary is a reimagining of the personal diary, providing a venue to combine snippets of our deep, personal, or random thoughts along with visualizations of the environments we write from.<br><br>Using geolocation services and a weather API, Skiary generates calming sky gradients and playful graphics into its UI, visualizing the importance of setting and the continuity of time as a backdrop for our most intimate musings. </p></div>
+	
+	
+	<h4 class="whole">concepts + mockup + planning</h4>
+	<p class="whole">Watching the night sky, sunrise, or sunrise is often a very personal, introspective activity. I wanted to create an experience that melds the atmospheric, visual richness of the sky at key times/locations/contexts into the action of writing down thoughts/emotions in an digital diary. A key motivation for me was to create an application that was not only functional, but engaged with users in an emotional way through a playful user interface.</p><br>
+	<img class="two-third"src="../img/full/skiarymockup.jpg">
+	<p class="whole"> I wanted render a certain diary entry's backdrop with graphics/colors that represented the time and weather at the current location of writing. The user's diary would be greeted at a section that allows a short input of characters to quickly jot down feelings, each previous post scrollable from the new entry section. <br><br> As the page scrolls from one post to another, the background seamlessly changes color according to a gradient that transitions the sky color between those different points. <br></p>
+	<img class="two-third" src="../img/full/skiarynotes.jpg">
+	<h4 class="whole">implementation</h4>
+	<p class="whole">I worked in a team of three to create skiary, working closely on both front-end and back-end technologies in its creation, using Meteor as a framework. The greatest challenge was implementing the dynamically changing user-interface based on time and geolocation, writing scripts to generate CSS that styles the background of each diary entry.</p>
+	<br> <img class="half inline" src="../img/full/skiary2.jpg">
+	<img class="half inline right" src="../img/full/skiary3.jpg">
+	<br><br> 	 <p class="whole"> I also created the homepage/login screen, which cycles through the various weather options with their graphics, and also animates the background between day and night.</p>
+	<img src="../img/full/skiary-homepage.gif"  class="whole"><br>
+	<br> <br> <p class="whole">Skiary is currently down (as our host, Meteor, no longer offers free web hosting). However, we are open to continuing development and making improvements in the future. <br> <br></p>
+</section>
+
+<section class="text-center footer"> 
+	<p>made with <img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon"> by jackie liu</p>
+</section>
+
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <!-- <script type="text/javascript" src="skrollr.stylesheets.min.js"></script> -->
+ <script type="text/javascript" src="../skrollr.min.js"></script>
+
+    <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+</body>
+</html>

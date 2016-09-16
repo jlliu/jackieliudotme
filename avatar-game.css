@@ -1,0 +1,75 @@
+#avatar-canvas {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  right: 30px;
+  top: 10%; }
+  #avatar-canvas img {
+    position: absolute;
+    right: 0px;
+    width: 450px; }
+  #avatar-canvas .hair {
+    z-index: 2; }
+  #avatar-canvas .body-ears {
+    z-index: 3; }
+  #avatar-canvas .earring {
+    z-index: 4; }
+  #avatar-canvas .body-face {
+    z-index: 5; }
+  #avatar-canvas .eyes, #avatar-canvas .mouths, #avatar-canvas .brows, #avatar-canvas .shirts, #avatar-canvas .accessories {
+    z-index: 6; }
+  #avatar-canvas .sweat, #avatar-canvas .tear, #avatar-canvas .earring, #avatar-canvas .necklace {
+    display: none; }
+
+@media screen and (max-width: 600px) {
+  #popup {
+    height: 95%;
+    top: 2.5%; }
+    #popup #popup-section {
+      padding: 20px; }
+    #popup h3, #popup h4 {
+      font-size: 18px; }
+    #popup h1 {
+      font-size: 26px; }
+    #popup .button.game:not(.item) {
+      padding: 10px 30px;
+      font-size: 18px;
+      width: auto;
+      position: relative;
+      right: 5px;
+      margin: 25px 25px; }
+    #popup .button.game.item {
+      width: 40px;
+      height: 40px; }
+    #popup #menu {
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: auto; }
+      #popup #menu .menu-category {
+        text-align: center;
+        height: 180px; }
+      #popup #menu #menu-nav {
+        padding: 10px 20px;
+        width: auto;
+        max-width: none; }
+        #popup #menu #menu-nav .category-title {
+          max-width: 100%;
+          padding: 0px 20px;
+          width: auto;
+          margin-top: 10px; }
+        #popup #menu #menu-nav .left-arrow h3, #popup #menu #menu-nav .right-arrow h3 {
+          font-size: 36px; }
+    #popup #avatar-canvas {
+      right: 50%;
+      left: 50%;
+      top: 38px; }
+      #popup #avatar-canvas img {
+        width: 80vw;
+        right: -40vw; } }
+@media screen and (min-width: 600px) and (max-width: 1070px) {
+  #avatar-canvas img {
+    width: 380px; } }
+
+/*# sourceMappingURL=avatar-game.css.map */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<link rel="stylesheet" type="text/css" href="../work-page.css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700|Nunito:400,300,700' rel='stylesheet' type='text/css'>
+<!-- <script src="../jquery.js" type="text/javascript"></script> -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="../navbar.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<div class="navbar-wrap sticky opaque" data-0="display:none;" data-650="display:block;transform:scaleY(0);top:-27px;" data-700="opacity:1;transform:scaleY(1);top:-0px;">
+	<div id="navbar">
+		<span id="navbar-logo" data-690="opacity:0;" data-710="opacity:1;"><a href="../">jackie liu</a></span>
+		<ul class="hide-for-mobile" data-690="opacity:0;" data-710="opacity:1;">
+			<li><a href="../#about">about</a></li>
+			<li><a href="../#works">works</a></li>
+			<li><a href="../#contact">contact</a></li>
+		</ul>
+		<ul class="mobile-menu show-for-mobile" >
+			<li class="navbar-chevron-listitem"><a><div class="navbar-chevron">></div></a></li>
+			<div class="dropdown">
+			<li ><a href="../#about">about</a></li>
+			<li ><a href="../#works">works</a></li>
+			<li ><a href="../#contact">contact</a></li>
+			</div>
+		</ul>
+
+	</div>
+</div>
+<div id="skrollr-body">
+
+<div id="content">
+<div class="navbar-wrap">
+<div id="navbar">
+	<span id="navbar-logo"><a href="../">jackie liu</a></span>
+	<ul class="hide-for-mobile">
+		<li><a href="../#about">about</a></li>
+		<li><a href="../#works">works</a></li>
+		<li><a href="../#contact">contact</a></li>
+	</ul>
+	<ul class="mobile-menu show-for-mobile">
+		<li><a><div class="navbar-chevron">></div></a></li>
+	</ul>
+</div>
+</div>
+
+<section>
+	<div class="heading-wrapper">
+		<div class="heading">
+			<h2>impossible baby simulator</h2>
+			<h4 class="heading-subheading">undergrad research project - spring 2015</h4>
+		</div>
+		<div class="top-border"></div>
+	</div>
+
+
+	<div class="row"><img src="../img/full/baby.jpg" class="two-third inline left box-shadow"><div class="third inline right details"><h4>done for</h4><p>MIT Media Lab - Design Fiction group</p><h4>tools used</h4><p>HTML, JavaScript/jQuery, CSS</p>
+		<h4><a href="http://aihasegawa.info/?works=impossible-baby" target="_blank">link to larger project &nbsp;&nbsp;></a></div></div>
+	<div class="row">
+		<p class="whole">As an ungraduate researcher my freshman year, I created a webapp for my Ai Hasegawa's <a href="http://aihasegawa.info/?works=impossible-baby" target="_blank">(im)possible baby project</a>, which aims to speculate a future where same-sex couples could have genetically-genuine children.</p>
+		<p class="whole">Her project required an ability to simulate the characteristics that a potential baby between a same-sex couple could have, so I created an application that allows for a user to upload two 23andMe (a popular personal genomics service) files and view a list of characteristics the two file's "baby" would have.</p>
+		
+	</div>
+	
+	
+	<h4>parsing the data</h4>
+	<p>I learned how to create a client-side web application that would allow for the user to upload a file, learning how to use the FileReader JavaScript Web API to parse 23 and me files. Storing the data from each line, and randomly picking chromosomes from each parent for each gene. Using this I constructed a list of the baby's genes.</p>
+	<img class="whole" src="../img/full/baby3.jpg">
+	<h4>displaying the results</h4>
+	<p>After I had the baby's genetic data, I compared it to a list of notable genotypes corresponding to bad, good, and neutral traits, given by SNPedia, a database that provides magnitude and repute of certain genetic combinations. I chose to display the more important characteristics (as determined by magnitude on SNPedia). I also offered a button that would allow for download of the baby's data in the form of its own 23andMe format file.</p>
+	
+	<img class="whole" src="../img/full/impossiblebabyresults.jpg">
+
+	<h4>after the simulator...</h4>
+	<p>Ai eventually used the simulator to combine the genetic information of a real life same-sex couple living in Japan, using the results from the generator to help speculate the physical appearance of their potential children using CGI. <a href="http://aihasegawa.info/?works=impossible-baby-case-01-asako-moriga" target="_blank">Check out the case-study here.</a></p>
+
+	<p>The entire project won awards such as the Excellence Award 19th Japan Media Arts Festival and 
+		Won an Excellence Award at  19th Japan Media Arts Festival, and also aired as a documentary on Japanese National TV. It was cool to see my tool in use, particularly in the few seconds they showed the app on the screen!</p>
+		<p > This was my first serious web programming project and also my first experience doing research as an undergraduate - overall I learned a lot from trying to make a functional* application starting from nothing.
+		<br> <br> <br> <br>
+		* I would do a lot of things different now, but also because I'm many years (and semesters) older than I was then.</p>
+</section>
+
+
+<section class="text-center footer"> 
+	<p>made with <img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon hide-for-mobile"><img src="../broken-heart-small.png" class="img-icon"> by jackie liu</p>
+</section>
+
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <!-- <script type="text/javascript" src="skrollr.stylesheets.min.js"></script> -->
+ <script type="text/javascript" src="../skrollr.min.js"></script>
+
+    <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+</body>
+</html>
