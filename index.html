@@ -10,53 +10,12 @@
 <script src="script.js" type="text/javascript"></script>
 <script src="navbar.js" type="text/javascript"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta property="og:image" content="img/full/avatar-1.png">
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 <title>jackie liu - art &middot; design &middot; code</title>
 </head>
 <body>
-
-<div class="navbar-wrap sticky opaque" data-0="display:none;" data-650="display:block;transform:scaleY(0);top:-27px;" data-700="opacity:1;transform:scaleY(1);top:-0px;">
-	<div id="navbar">
-		<span id="navbar-logo" data-690="opacity:0;" data-710="opacity:1;"><a href="#home">jackie liu</a></span>
-		<ul class="hide-for-mobile" data-690="opacity:0;" data-710="opacity:1;">
-			<li><a href="#about">about</a></li>
-			<li><a href="#works">works</a></li>
-			<li><a href="#contact">contact</a></li>
-		</ul>
-		<ul class="mobile-menu show-for-mobile" >
-			<li class="navbar-chevron-listitem"><a><div class="navbar-chevron">></div></a></li>
-			<div class="dropdown">
-			<li ><a href="#about">about</a></li>
-			<li ><a href="#works">works</a></li>
-			<li ><a href="#contact">contact</a></li>
-			</div>
-		</ul>
-
-	</div>
-</div>
-<div id="skrollr-body">
-<a name="home"></a>
-<div id="content">
-<div class="navbar-wrap top-navbar-wrap">
-	<div id="navbar">
-		<ul class="hide-for-mobile">
-			<li><a href="#about">about</a></li>
-			<li><a href="#works">works</a></li>
-			<li><a href="#contact">contact</a></li>
-		</ul>
-		<ul class="mobile-menu show-for-mobile" >
-			<li class="navbar-chevron-listitem"><a><div class="navbar-chevron navbar-chevron-nonsticky">></div></a></li>
-			<div class="dropdown">
-			<li ><a href="#about">about</a></li>
-			<li ><a href="#works">works</a></li>
-			<li ><a href="#contact">contact</a></li>
-			</div>
-		</ul>
-	</div>
-</div>
-<a><div id="background-wrap">
-
-	</div></a>
+<a><div id="background-wrap"></div></a>
 <div id="popup">
 <a id="close-button">X</a>
 
@@ -118,6 +77,46 @@
 	</div>
 </section>
 </div>
+<div class="navbar-wrap sticky opaque" data-0="display:none;" data-650="display:block;transform:scaleY(0);top:-27px;" data-700="opacity:1;transform:scaleY(1);top:-0px;">
+	<div id="navbar">
+		<span id="navbar-logo" data-690="opacity:0;" data-710="opacity:1;"><a href="#home">jackie liu</a></span>
+		<ul class="hide-for-mobile" data-690="opacity:0;" data-710="opacity:1;">
+			<li><a href="#about">about</a></li>
+			<li><a href="#works">works</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+		<ul class="mobile-menu show-for-mobile" >
+			<li class="navbar-chevron-listitem"><a class="chevron-link"><div class="navbar-chevron">></div></a></li>
+			<div class="dropdown">
+			<li ><a href="#about">about</a></li>
+			<li ><a href="#works">works</a></li>
+			<li ><a href="#contact">contact</a></li>
+			</div>
+		</ul>
+
+	</div>
+</div>
+<div id="skrollr-body">
+<a name="home"></a>
+<div id="content">
+<div class="navbar-wrap top-navbar-wrap">
+	<div id="navbar">
+		<ul class="hide-for-mobile">
+			<li><a href="#about">about</a></li>
+			<li><a href="#works">works</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+		<ul class="mobile-menu show-for-mobile" >
+			<li class="navbar-chevron-listitem"><a class="chevron-link"><div class="navbar-chevron navbar-chevron-nonsticky">></div></a></li>
+			<div class="dropdown">
+			<li ><a href="#about">about</a></li>
+			<li ><a href="#works">works</a></li>
+			<li ><a href="#contact">contact</a></li>
+			</div>
+		</ul>
+	</div>
+</div>
+
 
 <section id="title-section">
 	<div id="title-section-content">
@@ -154,7 +153,7 @@
 		<h2>hi my name is jackie!</h2>
 		<p>I'm a junior at the Massachusetts Institute of Technology studying computer science and design. I make things out of (but not limited to) paint, code, and tears.<br></p>
 		<p>
-		Previously, I've made software working as a front-end web engineer at <a href="http://formlabs.com" target="_blank">Formlabs</a> and as an undergraduate reseracher in the <a href="http://media.mit.edu" target="_blank">MIT Media Lab</a>.<br></p>
+		Previously, I've made software working as a front-end web engineer at <a href="http://formlabs.com" target="_blank">Formlabs</a> and as an undergraduate researcher in the <a href="http://media.mit.edu" target="_blank">MIT Media Lab</a>.<br></p>
 		<p>
 		I love exploring the blurry intersection of art and technology, and am particularly interested in themes of human intimacy, personal expression, and social change.<br></p>
 		<p>
@@ -241,7 +240,12 @@
 <script type="text/javascript" src="skrollr.min.js"></script>
 
     <script type="text/javascript">
-    var s = skrollr.init();
+    var s = skrollr.init({          
+            mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+        });
   </script>
  </div>
 </body>

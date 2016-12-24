@@ -9,7 +9,7 @@
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 <script src="../navbar.js" type="text/javascript"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="../favicon.png"/>
 <title>jackie liu - (im)possible baby simulator</title>
 </head>
 <body>
@@ -69,7 +69,7 @@
 	
 	
 	<h4>parsing the data</h4>
-	<p>I learned how to create a client-side web application that would allow for the user to upload a file, learning how to use the FileReader JavaScript Web API to parse 23 and me files. Storing the data from each line, and randomly picking chromosomes from each parent for each gene. Using this I constructed a list of the baby's genes.</p>
+	<p>I learned how to create a client-side web application that would allow for the user to upload a file, learning how to use the FileReader JavaScript Web API to parse 23andMe-style .txt files. I stored relevant data of the chromosome, RSID, and genotypes for each line in a parents 23andMe file, and randomly picked chromosomes from each parent per gene to construct a list of their potential baby's genes.</p>
 	<img class="whole" src="../img/full/baby3.jpg">
 	<h4>displaying the results</h4>
 	<p>After I had the baby's genetic data, I compared it to a list of notable genotypes corresponding to bad, good, and neutral traits, given by SNPedia, a database that provides magnitude and repute of certain genetic combinations. I chose to display the more important characteristics (as determined by magnitude on SNPedia). I also offered a button that would allow for download of the baby's data in the form of its own 23andMe format file.</p>
@@ -99,7 +99,12 @@
  <script type="text/javascript" src="../skrollr.min.js"></script>
 
     <script type="text/javascript">
-    var s = skrollr.init();
+    var s = skrollr.init({          
+            mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+        });
   </script>
 </body>
 </html>
